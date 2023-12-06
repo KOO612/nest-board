@@ -23,4 +23,14 @@ export class BoardsService {
     this.boards.push(board);
     return board;
   }
+
+  // Read 특정 id 가져오기
+  getBoardById(id: string): Board {
+    return this.boards.find((board) => board.id === id);
+  }
+
+  // Delete 기능
+  deleteBoard(id: string): void {
+    this.boards = this.boards.filter((board) => board.id !== id);
+  }
 }
