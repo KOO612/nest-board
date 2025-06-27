@@ -1,0 +1,35 @@
+# 게시글 전체 가져오기
+GET http://localhost:3000/board
+
+###
+
+# 선택한 게시글 가져오기
+GET http://localhost:3000/board/5
+
+###
+
+
+# 게시글 추가
+POST http://localhost:3000/board
+Content-Type: application/json
+
+{
+  "name": "z",
+  "contents" : "content 11"
+}
+
+###
+
+# 게시글 업데이트
+PUT http://localhost:3000/board/5
+Content-Type: application/json
+
+{
+  "name": "zz",
+  "contents" : "content 55"
+}
+
+###
+
+# 게시글 삭제
+DELETE http://localhost:3000/board/10
