@@ -14,7 +14,7 @@ POST http://localhost:3000/board
 Content-Type: application/json
 
 {
-  "name": "z",
+  "name": "z2",
   "contents" : "content 11"
 }
 
